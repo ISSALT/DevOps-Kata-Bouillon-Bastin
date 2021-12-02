@@ -8,7 +8,7 @@ class BerlinClockKata
     }
 
     public function fiveMinutes(int $minute):String{
-        return "Y";
+        return str_repeat("Y",$minute/5);
     }
 
 }
