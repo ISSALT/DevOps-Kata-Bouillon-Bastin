@@ -1,0 +1,17 @@
+{
+    "name": "vendor/berllin",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Berllin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guillaume",
+            "email": "guillaume.bouillon@student.vinci.be"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}
