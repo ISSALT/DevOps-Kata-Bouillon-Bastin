@@ -27,4 +27,9 @@ class BerlinClockKata
         return str_repeat("R",(($seconde/60)/60)/5);
     }
 
+    public function simpleSeconde(int $seconde)
+    {
+        return "";
+    }
+
 }
