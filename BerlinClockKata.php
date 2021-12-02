@@ -23,4 +23,8 @@ class BerlinClockKata
         return str_repeat("R",$minute/60);
     }
 
+    public function fiveHours(int $minutes):String{
+        return "R";
+    }
+
 }
