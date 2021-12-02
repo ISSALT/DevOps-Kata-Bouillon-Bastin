@@ -20,7 +20,7 @@ class BerlinClockKata
     }
 
     public function simpleHour(int $minute):String{
-        return "R";
+        return str_repeat("R",$minute/60);
     }
 
 }
