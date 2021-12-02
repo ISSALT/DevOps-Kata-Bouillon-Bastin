@@ -29,6 +29,8 @@ class BerlinClockKata
 
     public function simpleSeconde(int $seconde)
     {
+        if ($seconde%2==0)
+            return "R";
         return "";
     }
 
