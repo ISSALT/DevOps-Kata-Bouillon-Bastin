@@ -54,6 +54,6 @@ class BerlinClockKataTest extends TestCase
         $berlinClockKata = new BerlinClockKata();
 
         $this->assertEquals("YYR",$berlinClockKata->fiveMinutes(18));
-        $this->assertEquals("YYY",$berlinClockKata->simpleMinutes(18));
+        $this->assertEquals("YYY",$berlinClockKata->simpleMinute(18));
     }
 }
