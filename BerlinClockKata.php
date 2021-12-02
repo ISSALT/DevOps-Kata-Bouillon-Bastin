@@ -19,4 +19,8 @@ class BerlinClockKata
         return $result;
     }
 
+    public function simpleHour(int $minute):String{
+        return "R";
+    }
+
 }
