@@ -87,7 +87,7 @@ class BerlinClockKataTest extends TestCase
 
         $seconde = 2*60*60;
 
-        $this->assertEquals("RR",$berlinClockKata->simpleHour(120));
+        $this->assertEquals("RR",$berlinClockKata->simpleHour($seconde));
     }
 
     public function test02h10m00s(){
