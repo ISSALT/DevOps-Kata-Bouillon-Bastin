@@ -7,6 +7,7 @@ require "BerlinClockKata.php";
 
 class BerlinClockKataTest extends TestCase
 {
+    // Etape 1
     public function test00hO1m00s(){
 
         $berlinClockKata = new BerlinClockKata();
@@ -19,5 +20,12 @@ class BerlinClockKataTest extends TestCase
         $berlinClockKata = new BerlinClockKata();
 
         $this->assertEquals("YY",$berlinClockKata->simpleMinute(2));
+    }
+    // Etape 2
+    public function test00hO5m00s(){
+
+        $berlinClockKata = new BerlinClockKata();
+
+        $this->assertEquals("Y",$berlinClockKata->fiveMinute(5));
     }
 }
