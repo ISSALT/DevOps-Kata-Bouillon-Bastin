@@ -35,4 +35,11 @@ class BerlinClockKataTest extends TestCase
 
         $this->assertEquals("YY",$berlinClockKata->fiveMinutes(10));
     }
+
+    public function test00h15m00s(){
+
+        $berlinClockKata = new BerlinClockKata();
+
+        $this->assertEquals("YYR",$berlinClockKata->fiveMinutes(15));
+    }
 }
