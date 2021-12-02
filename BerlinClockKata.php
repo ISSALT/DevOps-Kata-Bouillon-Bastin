@@ -8,7 +8,7 @@ class BerlinClockKata
     }
 
     public function fiveMinutes(int $minute):String{
-        $lampe = $minute/5;
+        $lampe = ($minute%60)/5;
         $result = "";
         for ($i=1; $i<=$lampe; $i++){
             if ($i%3==0)
