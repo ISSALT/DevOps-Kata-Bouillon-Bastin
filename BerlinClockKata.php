@@ -27,11 +27,22 @@ class BerlinClockKata
         return str_repeat("R",(($seconde/60)/60)/5);
     }
 
-    public function simpleSeconde(int $seconde)
-    {
+    public function simpleSeconde(int $seconde):String{
         if ($seconde%2==0)
             return "R";
         return "";
+    }
+
+    public function clock(int $seconde):String{
+        $clock = "";
+
+        $clock.= $this->simpleSeconde($seconde)."\n";
+        $clock.= $this->fiveHours($seconde)."\n";
+        $clock.= $this->simpleHour($seconde)."\n";
+        $clock.= $this->fiveMinutes($seconde)."\n";
+        $clock.= $this->simpleMinute($seconde);
+
+        return $clock;
     }
 
 }
